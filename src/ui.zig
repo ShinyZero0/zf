@@ -245,8 +245,8 @@ fn inputToAction(input: term.InputBuffer, vi_mode: bool) Action {
         .left => .cursor_left,
         .right => .cursor_right,
         .enter => .confirm,
-        .tab => .select_down,
-        .shift_tab => .select_up,
+        .tab => .line_down,
+        .shift_tab => .line_up,
         .esc => .close,
         .none => .pass,
     };
